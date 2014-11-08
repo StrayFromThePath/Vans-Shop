@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>Tolkunov Alex</title>
+
+        <meta name="viewport" content="width=device-width">
+
+
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+       
+<div class = "wrapper">
+    <div class = "maincontent">
+        <header class="header">
+            <div class="container">
+                <ul class="header__contacts">
+                    <li class="header__item">
+                        <a href="mailto:" class="header__link header__link-email">support@vans-russia.ru</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link header__link-tel" href="tel:">8 (988) 896-39-22</a>
+                    </li>
+
+                </ul>
+                <a class="header__logo" href="index.html">
+                    <img src="img/logo.png" alt="logo" width="114" height="72"/>
+                </a>
+                    <a class="bucket" data-toggle="modal">
+                        <span class="bucket__text">Корзина пуста</span>
+                        <span class="doit">Заказать</span>
+                    </a>
+
+            </div>
+        </header>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">Корзина</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="msg"></div>
+                        <form id="order-form" action="" method="post" role="form">
+                            <h4>Ваш заказ</h4>
+                            <div id="order" class="wrapp">
+                                <!-- сюда приходят заказы -->
+                            </div>
+                            <h4>Ваши данные</h4>
+                            <div class="wrapp">
+                                <label for="name">Ваше имя</label>
+                                    <input type="text" class="input__name" id="name" placeholder="Имя" name="name" required><br/>
+                                <label for="phone">Телефон</label>
+                                    <input type="text" class="input__phone" id="phone" placeholder="Телефон" name="phone" required><br/>
+                                <label for="email">Email</label>
+                                    <input type="email" class="input__email" id="email" placeholder="E-mail" name="email" required><br/>
+                                <label for="message">Укажите размеры</label><br/>
+                                <textarea name="message" class="input__message" id="message" cols="30" rows="5" placeholder="AUTHENTIC SHOES White - 41" required></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a  class="modal-continue" data-dismiss="modal">Продолжить покупки</a>
+                        <button type="submit" class="modal-submit" form="order-form">Заказать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="photo">
+            <div class="container">
+                <div class="photo__text">
+                    <h1>Оригинальные кеды <span>Vans</span><br>
+                    По самым низким ценам!
+                    </h1>
+                    <a href="#catalog" class="photo__button">Перейти в каталог</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="info">
+            <div class="container">
+
+                <ul class="info__list">
+                    <li class="info__item">
+                        <div class="info__circle">
+                            <img class="info__circle-percent" src="img/100.png" alt="100%"/>
+                            <div class="info__circle-text">
+                                Только оригинальные
+                                кеды Vans
+                            </div>
+                        </div>
+                    </li>
+                    <li class="info__item">
+                        <div class="info__circle">
+                            <img class="info__circle-card" src="img/card.png" alt="card"/>
+                            <div class="info__circle-text">
+                                Удобная оплата
+                                множеством способов
+                            </div>
+                        </div>
+                    </li>
+                    <li class="info__item">
+                        <div class="info__circle">
+                            <img class="info__circle-box" src="img/box.png" alt="box"/>
+                            <div class="info__circle-box-text">
+                                Доставка по России
+                                и снг
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="catalog">
+            <div class="container">
+                <p><a name="catalog"></a></p>
+                <div class="alert"></div>
+                <ul class="catalog__list catalog__wrapper">
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="empty"></div>
+
+</div>
+
+    <!-- footer here -->
+    <footer role = "contentinfo">
+        <div class="container">
+            <div class="footer__logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="vk__social">
+                <a href="/"><img src="img/vk.jpg" alt="vk"></a>
+            </div>
+            <div class="footer__contacts">
+                <div class="phone__number">
+                    <a href="tel:" class="phone-number-text">
+                        8 (988) 896-39-22
+                    </a>
+                </div>
+                <div class="mail">
+                    <a href="mailto:" class="mail-icon-text">
+                        support@vans-russia.ru
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- ТОВАРЫ -->
+    <script id="blocks" type="text/x-handlebars-template">
+        {{#each blocks}}
+
+        <li class="catalog__item box">
+            <img class="catalog__pic" src="img/{{alias}}.JPG" alt="product"/>
+            <h2 class="label">{{rus}}</h2>
+            <p class="catalog__price">{{price}} руб.</p>
+            <span class="catalog__price-buy">Купить</span>
+                <div class="catalog__price-value">
+                    <input id="spinner1" name="{{rus}}" data="{{alias}}" data-price="price" class="spinners" value="0">
+                </div>
+        </li>
+        {{/each}}
+    </script>
+
+    <!-- КОРЗИНА -->
+    <script id="order-template" type="text/x-handlebars-template">
+        {{#each goods}}
+        {{#if amount}}
+        <div class="modal-product">
+            <img class="product__pic" src="img/{{productAlias}}.JPG" alt="product"/>
+            <p class="product__name">{{productNameRus}}</p>
+            <div class="cart-prod-line">
+                <input id="spinner2" data="{{productAlias}}" name="{{productNameRus}}" data-price="{{productPrice}}" class="spinners" value="{{amount}}">
+                <div class="text-in">
+                    <span class="x">x</span>
+                    <span class="product-price">{{productPrice}}</span>
+                    <span class="x">=</span>
+                    <span class="current-sum">{{productSum}}</span> руб.
+                </div>
+            </div>
+        </div>
+        <br/>
+        {{/if}}
+        {{/each}}
+            <p class="total">Итого</p>
+                <input type="text" id="total-sum" name="total" value="{{totalPrice}}" readonly="readonly">
+                <span>руб.</span>
+    </script>
+
+
+        <script src="js/handlebars-v2.0.0.js"></script>
+        <script src="js/vendor/jquery-1.11.0.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery.maskedinput.min.js"></script>
+
+        
+
+        
+    </body>
+</html>

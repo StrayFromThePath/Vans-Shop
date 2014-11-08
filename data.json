@@ -1,0 +1,58 @@
+{
+    "blocks": [  
+        {
+            "rus" : "ERA SHOES Classic",
+            "alias" : "EraClass",
+            "price" : "2000"
+
+        },
+        {
+            "rus" : "ERA SHOES Black",
+            "alias" : "EraBlack",
+            "price" : "2000"
+
+        },
+        {
+            "rus" : "AUTHENTIC SHOES White",
+            "alias" : "autWhite",
+            "price" : "2300"
+
+        },        
+        {
+            "rus" : "AUTHENTIC SHOES Espresso",
+            "alias" : "autEspresso",
+            "price" : "2500"
+
+        },
+        {
+            "rus" : "AUTHENTIC SHOES Garden",
+            "alias" : "AutGarden",
+            "price" : "2500"
+
+        },
+        {
+            "rus" : "ERA 59 Chocolate",
+            "alias" : "era59",
+            "price" : "2999"
+
+        },
+        {
+            "rus" : "ERA 59 Potting",
+            "alias" : "eraPotting",
+            "price" : "2999"
+
+        },
+        {
+            "rus" : "ERA SHOES Buck",
+            "alias" : "VansEraBuck",
+            "price" : "2999"
+
+        },
+        {
+            "rus" : "Old Skool Shoes",
+            "alias" : "oldskool",
+            "price" : "2300"
+
+        }
+    ]
+}
